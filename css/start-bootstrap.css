@@ -23,6 +23,10 @@ p, div, a {
     font-family: 'Open Sans';
 }
 
+#btn {
+    margin: 0 auto;
+}
+
 /* Home Page Carousel */
 
 header.carousel {
