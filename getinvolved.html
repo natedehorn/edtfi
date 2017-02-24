@@ -4,26 +4,42 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="description" content="The website for the Eating Disorders Task Force of Indiana">
+	<meta name="author" content="Nate DeHorn">
 
 	<title>Eating Disorders Task Force of Indiana</title>
 
-	<!-- Bootstrap Core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
-	<!-- Start Bootstrap -->
-	<link href="css/start-bootstrap.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
 
-	<!-- Custom Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans:300" rel="stylesheet">
+
+	<style type="text/css">
+		#accordion { margin-top: 25px; }
+		#accordion .panel-heading { padding: 0;}
+		#accordion .panel-title > a {
+			display: block;
+			padding: 0.4em 0.6em;
+			outline: none;
+			text-decoration: none;
+		}
+
+		#accordion .panel-title > a.accordion-toggle::before, #accordion a[data-toggle="collapse"]::before  {
+			content:"\e113";
+			float: left;
+			margin-right :1em;
+		}
+		#accordion .panel-title > a.accordion-toggle.collapsed::before, #accordion a.collapsed[data-toggle="collapse"]::before  {
+			content:"\e114";
+		}
+	</style>
 </head>
 
 <body>
 	<!-- Navigation -->
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container" style="font-size: 1.5em;">
-			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span>
@@ -33,17 +49,16 @@
 				</button>
 				<a class="navbar-brand" href="index.html">EDTFI</a>
 			</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li>
 						<a href="getinvolved.html">Get Involved</a>
 					</li>
 					<li>
-						<a href="#">Resources</a>
+						<a href="resources.html">Resources</a>
 					</li>
 					<li>
-						<a href="#">For Members</a>
+						<a href="formembers.html">For Members</a>
 					</li>
 				</ul>
 			</div>
@@ -51,21 +66,101 @@
 	</nav>
 
 	<div class="container">
-		<div class="row">
-			
-		</div>
-	</div>
-
-	<hr>
-
-	<!-- Footer -->
-	<footer>
-		<div class="row">
-			<div class="col-lg-12">
-				<p>Copyright &copy; Eating Disorders Task Force of Indiana</p>
+		<h1>Get Involved!</h1>
+		<p>Quarterly meetings are held from 10am to 12noon at the Charis Center for Eating Disorders on the first Fridays of March, June, and December. The September monthly meeting is an annual member conference (date/time TBD).</p>
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingOne">
+					<h4 class="panel-title">
+						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							Section 1: Categories of Membership
+						</a>
+					</h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+						The task force shall have two categories of membership: (i) Full member, and (ii) Associate member.
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingTwo">
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Section 1.1: Full Member
+						</a>
+					</h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+					<div class="panel-body">
+						Any person with an advanced degree (as determined by their respective profession and noted below) who has training and experience in the field of eating disorders, is eligible to become a full member of the task force. Full members have voting privileges. Full members must attend at least two meetings a year. Other Applicants with experience and expertise will be considered on a case by case basis.<br>
+						<br>
+						Psychologists: Ph.D., Psy.D., Ed.D.<br>
+						Dietitian: R.D.<br>
+						Physician: M.D. or D.O.<br>
+						Social Worker: M.S. W.<br>
+						Nurse: B.S., R.N.<br>
+						Counselor: Master's degree in counseling or related field
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							Section 1.2: Associate Member
+						</a>
+					</h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="panel-body">
+						Any person who does not meet complete criteria for full membership and is interested or involved in the field of eating disorders is eligible to become an associate member of the task force. Associate members do not have voting privileges.
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingFour">
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							Section 2: Dues
+						</a>
+					</h4>
+				</div>
+				<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+					<div class="panel-body">
+						The annual dues will be $20.00 per year for full and associate members, due at the December member meeting. The dues may be revised upon discretion of full members of the task force. Members who fail to pay their dues within 90 days from the time they become due shall be notified by the task force. If payment is not made within the next succeeding 90 days, the member shall, without further notice and without hearing, be dropped from the rolls and forfeit all rights and privileges of membership unless delayed by the task force officers for a good and sufficient cause.
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingFive">
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+							Section 3: Eating Disorder Awareness Week Mini Grant
+						</a>
+					</h4>
+				</div>
+				<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+					<div class="panel-body">
+						Eating Disorder Awareness Week is a collective effort, including eating disorder professionals, health care providers, students, educators, social workers, and individuals committed to raising awareness of the dangers surrounding eating disorders and the need for early intervention and treatment. EDTFI members are eligible to apply annually for grant funding to support programs and projects related to Eating Disorder Awareness Week. The application deadline is December 1st of the current year. Awardees will be notified December 31st. Please complete the <a class="nonblock" href="assets/edtfigrantapplication.pdf">EDTFI Grant Application</a>.
+					</div>
+				</div>
 			</div>
 		</div>
-	</footer>
+		<br>
+		<h3 style="text-align: center;">Would you like to become a member of the Eating Disorders Task Force of Indiana? <a href="assets/edtfi-application.pdf">Complete this application</a> and make your $20 check payable to Eating Disorders Task Force of Indiana and mail to: Todd Davis, Selah House 2541 N Shore Blvd Anderson, IN 46011</h3>
+
+		<hr>
+
+		<!-- Footer -->
+		<footer>
+			<div class="row">
+				<div class="col-lg-12">
+					<p>Copyright &copy; Eating Disorders Task Force of Indiana</p>
+				</div>
+			</div>
+		</footer>
+	</div>
 
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script>
