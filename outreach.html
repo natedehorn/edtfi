@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="The website for the Eating Disorders Task Force of Indiana">
+	<meta name="author" content="Nate DeHorn">
+
+	<title>Eating Disorders Task Force of Indiana</title>
+
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<link href="css/main.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans:300" rel="stylesheet">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/form.js"></script>
+</head>
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container" style="font-size: 1.5em;">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">EDTFI</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="getinvolved.html">Get Involved</a>
+					</li>
+					<li>
+						<a href="resources.html">Resources</a>
+					</li>
+					<li>
+						<a href="outreach.html">Outreach</a>
+					</li>
+					<li>
+						<a href="formembers.html">For Members</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<h1>Outreach</h1>
+		<div class="container">
+			The Eating Disorder Task Force of Indiana is committed to community education and increasing
+			eating disorder awareness. If you would like a brief presentation for your group, school, or
+			office, one of the task force members may be able to help. The following programs can be
+			scheduled for you through the EDTFI:
+			<ul>
+				<li>
+					General Eating Disorder Awareness Presentation
+				</li>
+				<li>
+					Diagnosing and Addressing Eating Disorders Presentation for Healthcare Professionals
+				</li>
+				<li>
+					Warning Signs of Eating Disorders Presentation for Parents and Teachers
+				</li>
+				<li>
+					School/Prevention Program for Students, Parents, Teachers, and Coaches
+				</li>
+				<li>
+					Body Image Presentation for Students, Parents, and Healthcare Professionals
+				</li>
+			</ul>
+		</div>
+		<br />
+		<div class="container">
+			<form id="contact-form" method="post" action="mailer.php" role="form">
+    		<div class="messages"></div>
+				<h3>Please complete the form below to request a presentation.</h3>
+				<div class="form-group">
+					<label for="Name">Name</label>
+					<input type="text" class="form-control" id="Name" name="name" required oninvalid="this.setCustomValidity('Please enter your name.')" oninput="setCustomValidity('')">
+				</div>
+				<div class="form-group">
+					<label for="Email">Email address</label>
+					<input type="email" class="form-control" id="Email" name="email" required oninvalid="this.setCustomValidity('Please enter a valid email.')" oninput="setCustomValidity('')">
+				</div>
+				<div class="form-group">
+					<label for="Subject">Subject</label>
+					<input type="text" class="form-control" id="Subject" name="subject" required oninvalid="this.setCustomValidity('Please enter a subject.')" oninput="setCustomValidity('')">
+				</div>
+				<div class="form-group">
+					<label for="Message">Message</label>
+					<textarea id="Message" name="message" style="resize:none" class="form-control" rows="3" required oninvalid="this.setCustomValidity('Please enter a message.')" oninput="setCustomValidity('')"></textarea>
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+
+		<hr>
+
+		<footer>
+			<div class="row">
+				<div class="col-lg-12">
+					<p>Copyright &copy; Eating Disorders Task Force of Indiana</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
